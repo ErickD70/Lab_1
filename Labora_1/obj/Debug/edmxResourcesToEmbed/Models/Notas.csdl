@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EstudianteModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="TblNotasEstudiante">
+    <Key>
+      <PropertyRef Name="IdEstudiante" />
+    </Key>
+    <Property Name="IdEstudiante" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="lab1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="lab2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="lab3" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="par1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="par2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="par3" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="EstudianteEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="TblNotasEstudiante" EntityType="Self.TblNotasEstudiante" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Registro De Notas</h2>
+@using (Html.BeginForm("Resultado", "Notas",FormMethod.Post))
+{
+
+    <div class="Contenedor">
+
+        <label for="nombre">Nombre: </label>
+        <input type="text" name="nombre" required>
+        <br>
+        <label for="lab1">Nota del laboratorio 1: </label>
+        <input type="text" name="lab1" required>
+        <br>
+        <label for="par1">Nota del Parcial 1: </label>
+        <input type="text" name="par1" required>
+        <br>
+        <label for="lab2">Nota del laboratorio 2: </label>
+        <input type="text" name="lab2" required>
+        <br>
+        <label for="par2">Nota del Parcial 2: </label>
+        <input type="text" name="par2" required>
+        <br>
+        <label for="lab3">Nota del laboratorio 3: </label>
+        <input type="text" name="lab3" required>
+        <br>
+        <label for="par3">Nota del Parcial 3: </label>
+        <input type="text" name="par3" required>
+        <br>
+        <input type="submit" value="Enviar">
+    </div>
+}
+
+
